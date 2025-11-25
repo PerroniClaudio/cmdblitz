@@ -16,8 +16,6 @@ export const getModel = (
 ) => {
   return genAI.getGenerativeModel({
     model: modelName,
-    systemInstruction: systemInstruction
-      ? { parts: [{ text: systemInstruction }] }
-      : undefined,
+    systemInstruction: systemInstruction,
   });
 };
